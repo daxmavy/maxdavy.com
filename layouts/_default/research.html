@@ -11,34 +11,6 @@
     </div>
     {{ end }}
 
-    {{ if .Params.current_projects }}
-    <section class="research-section">
-      <h2>Current Projects</h2>
-      <div class="research-items">
-        {{ range $index, $project := .Params.current_projects }}
-        <div class="research-item collapsible">
-          <div class="research-item-header clickable" data-target="project-{{ $index }}">
-            <div class="research-item-title-row">
-              <h3 class="research-item-title">
-                {{ if .link }}
-                <a href="{{ .link }}" target="_blank" rel="noopener" onclick="event.stopPropagation()">{{ .title }}</a>
-                {{ else }}
-                {{ .title }}
-                {{ end }}
-              </h3>
-              <span class="expand-icon">+</span>
-            </div>
-            <span class="research-item-date">{{ .date }}</span>
-          </div>
-          <div id="project-{{ $index }}" class="research-item-abstract collapsed">
-            {{ .abstract | markdownify }}
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </section>
-    {{ end }}
-
     {{ if .Params.publications }}
     <section class="research-section">
       <h2>Publications</h2>
@@ -72,31 +44,14 @@
     </section>
     {{ end }}
 
-    {{ if .Params.working_papers }}
+    {{ if .Params.random_interests }}
     <section class="research-section">
-      <h2>Working Papers</h2>
-      <div class="research-items">
-        {{ range $index, $paper := .Params.working_papers }}
-        <div class="research-item collapsible">
-          <div class="research-item-header clickable" data-target="paper-{{ $index }}">
-            <div class="research-item-title-row">
-              <h3 class="research-item-title">
-                {{ if .link }}
-                <a href="{{ .link }}" target="_blank" rel="noopener" onclick="event.stopPropagation()">{{ .title }}</a>
-                {{ else }}
-                {{ .title }}
-                {{ end }}
-              </h3>
-              <span class="expand-icon">+</span>
-            </div>
-            <span class="research-item-date">{{ .date }}</span>
-          </div>
-          <div id="paper-{{ $index }}" class="research-item-abstract collapsed">
-            {{ .abstract | markdownify }}
-          </div>
-        </div>
+      <h2 id="random-interests">Random interests</h2>
+      <ul class="interests-list">
+        {{ range .Params.random_interests }}
+        <li>{{ . | markdownify }}</li>
         {{ end }}
-      </div>
+      </ul>
     </section>
     {{ end }}
 

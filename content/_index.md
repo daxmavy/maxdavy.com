@@ -2,6 +2,8 @@
 title: "Home"
 image: "/images/profile.jpg"
 affiliation: "Oxford Internet Institute, University of Oxford"
+# Set to true to show the "Recent Updates" block on the homepage.
+show_news: false
 news:
   - date: "2026-01"
     text: "[New article](https://dsa-observatory.eu/2026/01/08/the-metrics-were-missing-in-dsa-content-moderation-transparency/) published about how the DSA needs different metrics for its transparency reports."
@@ -13,8 +15,23 @@ news:
     text: "Joined Atlassian's Ecosystem team as a graduate data scientist."
 ---
 
-Hi, I'm Max! I'm a reformed mathematician, and enjoy thinking about the relationship between the technical aspects of systems and the humans co-creating, influenced and impacted by them. I'm aiming to build a career as a researcher - starting by getting into a DPhil program!
+Hi, I'm Max! I'm studying a DPhil in Social Data Science at the Oxford Internet Institute in the University of Oxford. I'm supervised by [Paul Röttger](https://paulrottger.com/), [Scott Hale](https://www.oii.ox.ac.uk/people/profiles/scott-hale/) and [Jakob Foerster](https://www.jakobfoerster.com/). I am supported by the [Shirley Scholarship](https://www.oii.ox.ac.uk/about/giving/the-shirley-scholars-fund/) and a studentship from the [BOLD lab](https://bold-lab.ai/).
 
-Currently, I'm studying a MSc in Social Data Science at the Oxford Internet Institute. My thesis explores the marginalisation of minority political perspectives by LLMs.
+LLM-powered agentic systems are proliferating. However, we largely do not understand what happens when lots of agents interact (e.g. agents competing in marketplaces), or the possible consequences of people delegating knowledge gathering or decision-making to agents. I aim to produce research which meaningfully improves our collective ability to guide these changes positively.
 
-Browse my [research](/research/) for my research interests, publications, ongoing projects and speculative research ideas, read my [blog](/blog/) for hot takes and other writing, or learn more [about me](/bio/).
+I am a member of a smorgasbord of academic labs:
+
+- [BOLD Lab](https://bold-lab.ai/)
+- Paul's new lab in the Hasso Plattner Institute (link to come)
+- [Reasoning with Machines Lab](https://oxrml.com/)
+- [Equitable Access to Quality Information Lab](https://www.oii.ox.ac.uk/research/research-groups/equitable-access-to-quality-information-lab-eaqilab/)
+
+I enjoy board games, trivia, rowing, watching Only Connect and chasing down dog owners on the street to say hi to their dogs! I also have a large range of intellectual interests ([list here](/research/#random-interests)) that I am trying to avoid being distracted by.
+
+Please reach out if:
+
+- You would like to collaborate
+- You've spotted a mistake in my work / have other feedback
+- You want advice on applying to Oxford DPhil or MSc programmes (especially if you're coming from a non-traditional background and/or did not go to a fancy university for undergraduate)
+- You would like to sponsor API credits
+- You have a friendly dog in the Oxford area in need of a walk or a scratch

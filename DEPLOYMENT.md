@@ -1,160 +1,91 @@
-# Deployment Guide
+# Deployment
 
-Your personal website is ready! Here's how to deploy it to GitHub Pages.
+The site is a Hugo build served by **GitHub Pages** at **https://maxdavy.com**,
+with DNS and TLS fronted by **Cloudflare**.
 
-## Quick Start
-
-Your site is located at: `~/personal-website`
-
-Git repository has been initialized and all files are staged.
-
-## Step 1: Create GitHub Repository
-
-1. Go to [GitHub](https://github.com/new)
-2. Create a repository named `[your-username].github.io`
-   - Replace `[your-username]` with your actual GitHub username
-   - For example: `johndoe.github.io`
-3. Make it **public**
-4. **Do NOT** initialize with README (we already have one)
-
-## Step 2: Update Configuration
-
-Before pushing, update these files:
-
-### hugo.toml
-```toml
-baseURL = 'https://[your-username].github.io/'
-title = '[Your Name] - Research & Writing'
-
-[params]
-  author = "[Your Name]"
+```
+git push origin main
+      │
+      ▼
+GitHub Actions (.github/workflows/deploy.yml)
+  hugo --minify  →  ./public  →  actions/deploy-pages
+      │
+      ▼
+GitHub Pages  ──(claims maxdavy.com via static/CNAME)──▶  https://maxdavy.com
+      ▲
+      └── Cloudflare DNS: apex A/AAAA → GitHub Pages anycast IPs
+                          www CNAME  → daxmavy.github.io
 ```
 
-Replace:
-- `[your-username]` with your GitHub username
-- `[Your Name]` with your actual name
+## Everyday deploys
 
-### newsletter.html (Optional - for Buttondown)
-
-If you want to set up the newsletter:
-
-1. Sign up at https://buttondown.email
-2. Get your username
-3. Edit `layouts/partials/newsletter.html`
-4. Replace `[your-username]` in the form action URL
-
-## Step 3: Customize Content
-
-Edit these files with your information:
-
-- `content/_index.md` - Homepage
-- `content/bio/index.md` - Your bio
-- `content/research/index.md` - Research interests
-
-## Step 4: Commit and Push
+Nothing manual. Push to `main` and the workflow rebuilds and publishes:
 
 ```bash
-cd ~/personal-website
-
-# Make any edits from Step 2 and 3, then:
-git add .
-git commit -m "Initial commit: Personal website"
-
-# Add your GitHub repository as remote
-git remote add origin https://github.com/[your-username]/[your-username].github.io.git
-
-# Push to GitHub
-git push -u origin main
+git add -A && git commit -m "Update content" && git push
 ```
 
-## Step 5: Enable GitHub Pages
+Watch it with `gh run watch` or on the repository's **Actions** tab.
 
-1. Go to your repository on GitHub
-2. Click **Settings** → **Pages**
-3. Under "Build and deployment":
-   - **Source**: Select "GitHub Actions"
-4. Wait a few minutes for the action to complete
-
-Your site will be live at: `https://[your-username].github.io`
-
-## Verify Deployment
-
-1. Go to **Actions** tab in your GitHub repository
-2. You should see a workflow run called "Deploy to GitHub Pages"
-3. Wait for it to complete (green checkmark)
-4. Visit your site URL
-
-## Adding New Blog Posts
+## Local preview
 
 ```bash
-# Create a new post
-cd ~/personal-website
-hugo new blog/posts/my-new-post.md
-
-# Edit the file
-# Set draft: false when ready
-
-# Commit and push
-git add content/blog/posts/my-new-post.md
-git commit -m "Add new post: My New Post"
-git push
-
-# Site will automatically rebuild and deploy!
-```
-
-## Local Development
-
-Test changes locally before pushing:
-
-```bash
-cd ~/personal-website
 hugo server -D
-
-# Visit http://localhost:1313
-# Press Ctrl+C to stop
+# http://localhost:1313
 ```
 
-## Features Demonstration
+## The pieces, and where they are configured
 
-The welcome post (`content/blog/posts/welcome.md`) demonstrates:
-- ✅ Footnotes with hover preview
-- ✅ Citations with hover
-- ✅ Bibliography
-- ✅ Code blocks
-- ✅ Formatting
+| Piece | Where | Notes |
+|---|---|---|
+| Custom domain | `static/CNAME` | Contains `maxdavy.com`. Deleting it un-claims the domain. |
+| Base URL | `hugo.toml` | `baseURL = 'https://maxdavy.com/'` |
+| Build & deploy | `.github/workflows/deploy.yml` | Pages source must be set to **GitHub Actions**, not "Deploy from a branch". |
+| DNS | Cloudflare | See below. |
 
-View it locally to test these features!
+### DNS
+
+Managed with the `maxdavy-site` skill's helper (the Cloudflare token lives only
+at `~/.config/maxdavy/cloudflare-token`):
+
+```bash
+~/.claude/skills/maxdavy-site/scripts/maxdavy.sh dns list
+```
+
+The apex points at GitHub's Pages anycast addresses:
+
+```
+185.199.108.153   185.199.109.153   185.199.110.153   185.199.111.153
+2606:50c0:8000::153   2606:50c0:8001::153   2606:50c0:8002::153   2606:50c0:8003::153
+```
+
+These records are **DNS-only** (grey cloud), not proxied. GitHub terminates TLS
+itself and provisions the certificate for `maxdavy.com`; putting Cloudflare's
+proxy in front interferes with that certificate's issuance and renewal. If you
+ever do want the orange cloud, issue the certificate first and set the zone's
+SSL/TLS mode to **Full (strict)**.
+
+## The old address
+
+`daxmavy.github.io` now serves a redirect stub — a short "moved" message and then
+a bounce to maxdavy.com, path preserved. Its source is the
+`daxmavy/daxmavy.github.io` repository.
+
+## Newsletter
+
+The subscribe form posts to Buttondown (`layouts/partials/newsletter.html`). It
+appears at the foot of blog posts only; it is no longer on the homepage.
 
 ## Troubleshooting
 
-### GitHub Actions failing?
+**Actions run is green but the site is stale** — hard-refresh; Pages caches at the
+edge for a few minutes.
 
-- Check that you enabled "GitHub Actions" as the source (not "Deploy from a branch")
-- Verify the workflow file exists: `.github/workflows/deploy.yml`
+**`maxdavy.com` serves a certificate error right after setup** — GitHub needs the
+DNS records to resolve to it before it can issue the certificate. Wait, then in
+the repository's Settings → Pages re-save the custom domain and tick *Enforce
+HTTPS*.
 
-### Site not updating?
-
-- Check the Actions tab for errors
-- Make sure you pushed to `main` branch
-- Clear your browser cache
-
-### Newsletter not working?
-
-- Sign up for Buttondown first
-- Update the form action URL in `layouts/partials/newsletter.html`
-
-## Next Steps
-
-1. Add your custom domain (optional)
-2. Set up Buttondown newsletter
-3. Add more content
-4. Customize the design in `static/css/style.css`
-5. Add analytics (Plausible, GoatCounter, etc.)
-
-## Support
-
-- Hugo docs: https://gohugo.io/documentation/
-- GitHub Pages: https://docs.github.com/pages
-- Buttondown: https://buttondown.email/help
-
-Your website is ready to go! 🚀
+**A curl from Max's laptop shows a self-signed certificate** — that is Cloudflare
+WARP/Gateway TLS-inspecting, not a site fault. Check in a browser, or use
+`curl -k`.

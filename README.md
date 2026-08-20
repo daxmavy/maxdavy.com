@@ -1,6 +1,10 @@
 # Personal Website
 
-A minimal, brutalist-style personal website built with Hugo and deployed to GitHub Pages.
+A minimal, brutalist-style personal website built with Hugo and deployed to GitHub Pages
+at **[maxdavy.com](https://maxdavy.com/)**.
+
+The old address, `daxmavy.github.io`, now serves only a redirect stub (see the
+`daxmavy/daxmavy.github.io` repository).
 
 ## Features
 
@@ -21,8 +25,8 @@ A minimal, brutalist-style personal website built with Hugo and deployed to GitH
 
 ```bash
 # Clone the repository
-git clone https://github.com/[your-username]/[your-username].github.io.git
-cd [your-username].github.io
+git clone https://github.com/daxmavy/maxdavy.com.git
+cd maxdavy.com
 
 # Start the Hugo development server
 hugo server -D
@@ -83,15 +87,14 @@ At the end of your post:
 
 The site automatically deploys to GitHub Pages when you push to the `main` branch.
 
-### Setup GitHub Pages
+### How the custom domain is wired
 
-1. Create a repository named `[your-username].github.io`
-2. Push this code to the repository
-3. Go to Settings → Pages
-4. Set Source to "GitHub Actions"
-5. The workflow will automatically build and deploy
-
-Your site will be available at `https://[your-username].github.io`
+- `static/CNAME` claims `maxdavy.com` for this repository.
+- Pages source is set to **GitHub Actions**; `.github/workflows/deploy.yml` builds
+  with Hugo and deploys on every push to `main`.
+- DNS lives in Cloudflare: apex `A`/`AAAA` records for `maxdavy.com` point at the
+  GitHub Pages anycast addresses, and `www` is a `CNAME` to `daxmavy.github.io`.
+  Manage them with `~/.claude/skills/maxdavy-site/scripts/maxdavy.sh dns list`.
 
 ## Configuration
 
@@ -117,7 +120,8 @@ Edit `hugo.toml` to customize:
 ├── archetypes/          # Content templates
 ├── content/             # All site content (markdown)
 │   ├── bio/
-│   ├── blog/
+│   ├── blog/            # kept, but deliberately unlinked from the main nav
+│   ├── maximalism/
 │   └── research/
 ├── data/                # Bibliography and data files
 ├── layouts/             # HTML templates
@@ -147,6 +151,13 @@ Edit `static/css/style.css` to customize the brutalist design. The design princi
 - **Bio**: `content/bio/index.md`
 - **Research**: `content/research/index.md`
 - **Blog posts**: `content/blog/posts/`
+
+### Two deliberate bits of hiding
+
+- **The blog is unlisted.** It still builds and lives at `/blog/`, but the only
+  link to it is a small one in the site footer — it is not in the header nav.
+- **The homepage news block is off.** The `news:` entries are still in
+  `content/_index.md`; set `show_news: true` there to render them again.
 
 ## License
 

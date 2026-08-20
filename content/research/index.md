@@ -1,30 +1,14 @@
 ---
 title: "Research"
-description: "My research interests and ongoing projects"
+description: "My research interests and publications"
 layout: "research"
 
 research_interests: |
-  I aim to make the impact of AI on our society visible, demonstrate novel potential (and realistic) risks, and build interventions to target those risks. I have a particular interest in how AI-powered tools and infrastructure shape how people consume and interpret information.
-  
-  I am primarily a computer scientist, evaluating and intervening upon AI systems to observe and control their behaviour. However, I draw upon social science methodologies (such as experimental design for valid causal inference), as well as insights from social science when investigating the possible impact of AI systems (such as theories about intermediation in media consumption). I appreciate the generality and power of mathematical formalism, but strongly believe in avoiding abstraction traps (see [here](https://dl.acm.org/doi/10.1145/3287560.3287598) and more recently, [here](https://www.cs.princeton.edu/~arvindn/publications/algorithmic_fairness_category_error.pdf)).
+  I aim to produce research which meaningfully shifts how the research community, public and policy-makers think about LLMs and AI more generally. My focus is on forward-looking research which studies phenomena which seem likely to occur within the next 1-2 years. I am currently early in my PhD and have not decided on what area to specialise in; I describe my general interests below.
 
-  I have a long-term goal of providing technical expertise to improve the design of regulation.
+  *Trusting LLMs*. I trust a tool or person if I believe that they are so likely to perform a task in the manner I intended that I don't check whether they did so. LLMs are heavily optimised to gain the trust of their users, through *performing* competence, reflectiveness and objectivity. To a large degree, this trust is what makes LLMs useful: they are able to autonomously exercise judgement about sub-problems encountered when working towards the user's stated objective. However, as LLM capabilities advance and people and institutions trust LLMs more, they are likely to be provided greater autonomy, less supervision and more powerful tools; and integrated into the social and political processes our societies depend on. I aim to investigate possible consequences and develop mitigations, if possible.
 
-current_projects:
-  - title: "How do LLMs marginalise or prefer certain political perspectives when summarising documents?"
-    date: "ongoing"
-    abstract: "LLMs are increasingly used both for 'neutral' infrastructure (such as summarisation tools for journalists) and [by individuals pondering political decision-making](https://doi.org/10.48550/arXiv.2509.05219). Political bias in LLMs is therefore highly consequential, and there has been a flurry of research into this area by both frontier labs and academics. One important and unstudied area is the bias of LLMs when processing documents - which they regularly do when summarising web search results or when pulling from databases. My thesis intends to explore this area, investigating possible causes for bias to be exacerbated or moderated when LLMs are used to summarise documents. With [Paul Röttger](https://paulrottger.com/) (Oxford Internet Institute)."
-    link: ""
-
-  - title: "Can diffusion models imitate artistic style?"
-    date: "ongoing"
-    abstract: "Existing research has studied whether people are able to distinguish between AI-generated and human-created art, finding that they are close to indistinguishable for certain models (see [here](https://doi.org/10.48550/arXiv.2402.03214) and [here](https://doi.org/10.48550/arXiv.2502.15856)). No one has yet directly asked people to rate images according to how similar they are to an artist's style. We devise a two-alternative forced-choice (2AFC) experiment aimed at directly measuring the stylistic fidelity of models when prompted to imitate an artist's style. This provides a novel evaluation of model's capability in this domain, disentangled from how good they are at producing technically correct (e.g. anatomically correct hands) images. With [Raphaël Millière](https://raphaelmilliere.com/) (Oxford Institute for Ethics in AI) and collaborators."
-    link: ""
-
-  - title: "Can we use neurosymbolic methods to improve robustness of multi-agent negotiations?"
-    date: "ongoing"
-    abstract: "LLM-controlled agents currently [fail](https://doi-org.ezproxy-prd.bodleian.ox.ac.uk/10.48550/arXiv.2309.17234) at complex negotiation problems. This is especially risky in contexts where they make promises that their principals (such as individuals or corporations) are held to. Can we use neurosymbolic methods (where a sub-problem is solved using a old-school symbolic algorithm) to provide security and robustness guarantees to such systems? With [Ilia Shumailov](https://iliaishacked.github.io/) and [Christian de Witt](https://wittlab.ai/author/christian-schroeder-de-witt/) (Oxford Witt Lab)."
-    link: ""
+  *LLM-powered autonomous agents*. Trillions of dollars of investment are currently aimed at building autonomous and long-running AI agents. These agents will be both more and less powerful, more and less intelligent, more and less moral than humans, depending on what aspect of each concept one focuses on. They will interact with one another, and also with humans. There are many questions raised by this new paradigm: how agents will influence one another; how systems relying on accountability or reputation apply to agents; and how such agents and humans might work together.
 
 publications:
   - title: "The Missing Metrics in DSA Content Moderation Transparency"
@@ -38,4 +22,18 @@ publications:
     venue: "IEEE Wireless Communications, 28(1), 152–159"
     abstract: "This paper presents computational models of human decision-making and their applications to IoT systems. We explore how understanding human behavioral patterns can inform the design of more effective and user-centered Internet of Everything architectures. Co-authored with [Setareh Maghsudi](https://etit.ruhr-uni-bochum.de/en/lts/team/prof-dr-ing-setareh-maghsudi/)."
     link: "https://doi.org/10.1109/MWC.001.2000250"
+
+random_interests:
+  - "Philosophical aspects of language models (see these two articles [1](https://arxiv.org/abs/2401.03910) [2](https://arxiv.org/abs/2405.03207))"
+  - "Forced choice and Bradley-Terry/multinomial logit vs scalar measurements"
+  - "Extensions of [prediction-powered inference](https://arxiv.org/pdf/2301.09633)"
+  - "Measuring hard-to-measure concepts"
+  - "Information flows & decision-making inside organisations & shocks to organisations"
+  - "Algorithm design (think LeetCode but for fun)"
+  - "Computational social choice; mechanism design; algorithmic game theory"
+  - "Network science"
+  - "Behavioural embeddings for clickstream data"
+  - "Effective altruism"
+  - "Quant interview-style brainteasers"
+  - "What is the possible social justification for credit cards with interest rates as the primary revenue driver (spoiler: I don't think there is one)"
 ---
