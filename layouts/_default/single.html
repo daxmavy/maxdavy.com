@@ -1,5 +1,6 @@
 {{ define "main" }}
 <article>
+  {{ if not .Params.hide_title }}
   <header>
     <h1>{{ .Title }}</h1>
     {{ if not .IsHome }}
@@ -17,6 +18,7 @@
     </div>
     {{ end }}
   </header>
+  {{ end }}
 
   <div class="content">
     {{ .Content }}
