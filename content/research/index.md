@@ -24,6 +24,7 @@ publications:
     link: "https://doi.org/10.1109/MWC.001.2000250"
 
 random_interests:
+  - "What causes people to change their beliefs"
   - "How people (and/or agents!) model one another's cognitive processes"
   - "Philosophical aspects of language models (see these two articles [1](https://arxiv.org/abs/2401.03910) [2](https://arxiv.org/abs/2405.03207))"
   - "Forced choice and Bradley-Terry/multinomial logit vs scalar measurements"
