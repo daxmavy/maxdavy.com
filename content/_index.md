@@ -31,7 +31,7 @@ I enjoy board games, trivia, rowing, watching Only Connect and chasing down dog 
 Please reach out if:
 
 - You would like to collaborate
-- You've spotted a mistake in my work / have other feedback
+- You've spotted a mistake in my work / have other feedback ([anonymous feedback form](https://forms.gle/53B2FzPFPJfiPNtEA))
 - You want advice on applying to Oxford DPhil or MSc programmes (especially if you're coming from a non-traditional background and/or did not go to a fancy university for undergraduate)
 - You would like to sponsor API credits
 - You have a friendly dog in the Oxford area in need of a walk or a scratch

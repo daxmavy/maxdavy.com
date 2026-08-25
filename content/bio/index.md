@@ -17,4 +17,4 @@ Effective altruism has influenced me for a long time, primarily because it takes
 - Personal: {firstname}.{lastname}98@gmail.com
 - Oxford email: {firstname}.{lastname}@oii.ox.ac.uk
 
-[^morse]: This provides a way to meaningfully define a gradient flow on a graph (yes, nodes and edges) so that powerful methods from smooth manifolds transfer across directly! If you have been successfully nerdsniped and have a maths background, check out <https://radon.mat.univie.ac.at/~slc/s/s48forman.pdf>.
+[^morse]: This provides a way to meaningfully define a gradient flow on a graph (yes, nodes and edges) so that powerful methods from smooth manifolds transfer across directly! If you have been successfully nerdsniped and have a maths background, [check this out](https://radon.mat.univie.ac.at/~slc/s/s48forman.pdf).
