@@ -17,7 +17,7 @@ news:
 
 Hi, I'm Max! I'm studying a DPhil in Social Data Science at the Oxford Internet Institute in the University of Oxford. I'm supervised by [Paul Röttger](https://paulrottger.com/), [Scott Hale](https://www.oii.ox.ac.uk/people/profiles/scott-hale/) and [Jakob Foerster](https://www.jakobfoerster.com/). I am supported by the [Shirley Scholarship](https://www.oii.ox.ac.uk/about/giving/the-shirley-scholars-fund/) and a studentship from the [BOLD lab](https://bold-lab.ai/).
 
-LLM-powered agentic systems are proliferating. However, we largely do not understand what happens when lots of agents interact (e.g. agents competing in marketplaces), or the possible consequences of people delegating knowledge gathering or decision-making to agents. I aim to produce research which meaningfully improves our collective ability to guide these changes positively.
+LLM-powered agentic systems are proliferating. However, we largely do not understand what happens when lots of agents interact (e.g. agents competing in marketplaces), or the possible consequences of people delegating knowledge gathering or decision-making to agents. I aim to produce technical research and evaluations which meaningfully improve our collective ability to guide these changes positively.
 
 I am a member of a smorgasbord of academic labs:
 
