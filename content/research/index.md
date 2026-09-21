@@ -41,3 +41,17 @@ random_interests:
   - "Quant interview-style brainteasers"
   - "What is the possible social justification for credit cards with interest rates as the primary revenue driver (spoiler: I don't think there is one)"
 ---
+
+## Funding
+
+AI research is unfortunately expensive. Additional funding thus meaningfully increases my ability to conduct impactful and high-quality research. I'm grateful to the following organisations for their support:
+
+- 2026: Oxford Internet Institute (~£100k)
+- 2026: British Open-Ended Learning & Discovery lab (~£66k)
+- 2026: Lyceum (~£700)
+
+All of my funding sources are disclosed above. External funding does not dictate what topics I pursue.[^funding]
+
+[^funding]: In fact, it often enables me to pursue exciting topics that I'd otherwise be unable to investigate!
+
+Please reach out if you'd like to collaborate on exciting and impactful research, and/or provide support!
