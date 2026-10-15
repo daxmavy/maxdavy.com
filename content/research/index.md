@@ -45,7 +45,8 @@ research_interests: >
 
   However, my research interests are not set in stone. I'm also interested in
   monitorability, the exhaustiveness & implications of the persona selection
-  model
+  model, and many other topics. If it is novel or forward-looking, addresses an
+  important problem, and is related to AI safety, I am likely interested!
 publications:
   - title: The Missing Metrics in DSA Content Moderation Transparency
     date: 2026-01
