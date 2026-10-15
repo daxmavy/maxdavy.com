@@ -24,7 +24,7 @@ description: Opinionated advice from Max and Alyona on supervision, learning,
 - You can just ask to join courses across Oxford. One interesting option is the CDTs (Centres for Doctoral Training), which run focused training in different topics, e.g. health data science, StatML, AIMS, and many others. If you send a polite email to the relevant administrator expressing interest and asking to join, this is often possible.
 - It's much harder to join or audit official courses, which is why I recommend the CDTs.
 - Check out talks on [Oxford Events](https://events.ox.ac.uk). There are so many cool people giving talks here all the time.
-- Lower your expectations of teaching quality at the OII. Lecturers typically put in effort, but the curriculum design is all over the place. Learning often happens around the classroom rather than in it: talking about interesting papers, figuring out what to do for your summatives, reading up on different areas to come up with thesis ideas.
+- Learning often happens around the classroom rather than in it. Lecturers put in effort, but the curriculum design is all over the place. I found that I learned more (especially about how to do and think about research) by talking about interesting papers, figuring out what to do for your summatives, reading up on different areas to come up with thesis ideas, and of course doing the assignments, which are all focused on different parts of doing research.
 - Some courses can be boring, but because almost all final assignments are some form of research project that you choose, you can have a lot of fun with them.
 - You can get a lot out of a course even if you think you already know the content. For example, in stats, many people said "I know what a linear regression is", but didn't know more deeply why it works, when it might fail, or how to apply it in practice. I studied maths and stats in my undergrad, and then worked as a data scientist for quite a while before coming to the OII. Despite all this, I still got a lot out of the stats class, just from the chance to read and think deeply about stats.
 - Chat to PhD students, and feel free to reach out to different people in the department.
@@ -71,25 +71,28 @@ description: Opinionated advice from Max and Alyona on supervision, learning,
 - Please, please, please, please try not to use AI to answer "dumb questions" or to tutor yourself. You came to Oxford for a community of interesting and engaged classmates: ask them instead! Chatting through these questions with other students has so many side benefits. You signal that you're interested in an area or method, it starts conversations, explaining things to each other is a great way to consolidate knowledge, and it's just fun to learn with and from one another. And by role-modelling that you don't know everything, you make everyone more willing to open up and learn from one another.
 - Use AI to find articles, but read everything before you cite it. Be aware that AI isn't great at literature review; it frequently puts the emphasis in the wrong places.
 - Use AI to write code, but make sure you understand the choices it is making.
+  - As you will see from my code below, I'm pretty comfortable with letting AI write both code and documentation completely autonomously. There are of course exceptions (e.g. explaining a concept alongside code), but IMO it is no longer super important to document code in a particular careful or hand-crafted way, because everyone has agents who can explain parts of code to them.
 - I have a Claude Code skill file for using Brains (the OII GPU server): [https://github.com/daxmavy/brains-claude](https://github.com/daxmavy/brains-claude)
 - I cannot overemphasise this: do not produce AI slop or use AI to think on your behalf. People can easily spot it and will judge you for it. They will not judge you for saying something wrong or "silly"; they will judge you for putting out slop. It is even fairly easy to spot when someone is speaking aloud but reciting points an AI came up with for them.
 - Read good writing (articles, blogs, books) regularly, so that you are often exposed to writing other than AI-generated output.
 
 ## Writing
 
+*these are all tips from past feedback*
+
 - Fewer arguments, explained more fully in simpler steps and with examples, are preferable to super-dense work. I got destroyed in a couple of early summatives for writing super-dense article reviews. Give your work to parents or friends from different backgrounds and see if they understand it. If a university-educated person with a professional background doesn't understand your argument, that's typically a bad sign.
 - Be constructive: no criticism without a proposed fix or alternative.
 - Pay attention to formatting. Avoid AI-style diagrams, clean up your bibliography formatting, use colours and chart styles consistently, use LaTeX, and write good captions. Look at Paul Röttger's IssueBench paper for inspiration.
 - Don't try to be stylish in your writing. Dry humour is not appreciated; just go for academic prose.
 
-### Specifically for Data and Society and Research Design
+Specifically for Research Design & Data and Society 1:
 
-- (I find this difficult to phrase well.) Be super neutral. You can make a bold argument, but some markers will penalise work whose tone they see as "outraged", "righteous" or "ideologically motivated". This is based on direct feedback from markers in my year.
-- Relatedly, in Research Design, include both positive and negative aspects of each paper.
+- (I find this difficult to phrase well.) Be super neutral. You can make a bold argument, but some markers will penalise work whose tone they see as outraged, righteous or ideologically motivated, or in my case, having "moral conviction". This is based on direct feedback to multiple students in Data & Society 1 in 2025/6 cohort.
+- Relatedly, in Research Design for Social Data Science, include both positive and negative aspects of each paper. [Here is a summary of feedback from last year's cohort](https://docs.google.com/document/d/1gMt0WagDoaWuaAxRi7eQHwxViigIaS1AWgx1goWTyco/edit?tab=t.0).
 
 ## Backups and submitting early
 
-I have three different horror stories from the MSc alone:
+I myself have three different horror stories from the MSc:
 
 1. An unsolvable LaTeX compilation issue that first appeared ten minutes before submission (I know, this is ridiculous).
 2. Word crashed and I had forgotten to turn on autosave, losing all my progress (I had to retype it from memory).
