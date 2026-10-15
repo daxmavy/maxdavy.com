@@ -3,7 +3,8 @@ title: A random list of advice for OII MSc students
 description: Opinionated advice from Max and Alyona on supervision, learning,
   AI, writing and PhD applications
 date: 2026-10-15
-aliases: ["/msc-advice/"]
+aliases:
+  - /msc-advice/
 ---
 *From Max and Alyona.*
 
@@ -69,7 +70,7 @@ aliases: ["/msc-advice/"]
 
 ## AI
 
-- Don't use AI to write at all, at any point. Writing arguments down in full clarifies what you mean, and often forces you to notice mistakes or weak points. (See [the longer rant below](#why-you-shouldnt-use-ai-to-write).)
+- Don't use AI to write at all, at any point. [For a longer argument on this point, see below.](#why-you-shouldnt-use-ai-to-write)
 - Please, please, please, please try not to use AI to answer "dumb questions" or to tutor yourself. You came to Oxford for a community of interesting and engaged classmates: ask them instead! Chatting through these questions with other students has so many side benefits. You signal that you're interested in an area or method, it starts conversations, explaining things to each other is a great way to consolidate knowledge, and it's just fun to learn with and from one another. And by role-modelling that you don't know everything, you make everyone more willing to open up and learn from one another.
 - Use AI to find articles, but read everything before you cite it. Be aware that AI isn't great at literature review; it frequently puts the emphasis in the wrong places.
 - Use AI to write code, but make sure you understand the choices it is making.
@@ -132,5 +133,7 @@ AI is improving massively across a wide range of what we would historically call
 **Third, writing with AI likely degrades your own critical thinking and creative ideation skills**, or at the very least denies you the opportunity to improve them. I'm sure you've all heard this before. Consider, hard, why some of the most AI-pilled "automate everything" researchers are still intensely focused on careful hand-written communication.
 
 **Fourth, you do not want to be judged by others for using AI.** It is almost certainly possible to auto-research every single assignment in the MSc and receive a distinction. The university and department are obviously struggling with how to respond to this fact. However, doing so is almost completely uncorrelated (and might even be anti-correlated) with achieving most of the goals people have for doing the MSc. It is intensely obvious when someone is delegating a large share of their thinking or writing to AI. A common response to seeing this is, to put it politely, to "update one's beliefs about the quality of the researcher and/or their research". This may or may not be a reasonable judgement, but it is one that many researchers make. I have been in many rooms and presentations where hints that something was AI-generated led people to joke about the quality of the research. It is sometimes obvious when someone's thinking has been delegated to AI, even when they are talking aloud. This is harder to detect, but I suspect it does not serve your goals if other people believe your thinking is mostly regurgitated AI output. These judgements are incredibly easy to avoid: don't delegate your thinking or writing to AI. People will judge you far, far, far less for asking a "silly" question, saying something incorrect (in fact, they will typically respect you more for it), or for not having Claude-polished slides than if they believe you are sharing AI-generated content.
+
+One rational reason to judge people who produce AI-generated writing / presentations / slop is because it is, on average, much lower quality research than research which is presented using hand-crafted writing / presentations. This is not a claim about causality: it is perfectly possible to do excellent and ground-breaking research and present or write about it using an AI slop presentation or article. However, it is definitely the case that the average quality of research which is presented using AI is much lower than the average quality of research which is not presented using AI. Researchers are incredibly time-poor, and will frequently use quick heuristics to guess at the quality of a piece of research. Thus, if a paper, email or presentation has AI-generated writing, then it is both a rational and widely-used heuristic to guess that it is low quality.
 
 **Fifth, your value-add as a researcher (and likely also as an employee) is basically your creative ideation and critical thinking skills**, along with your soft skills and network. If *everyone, or many people, has access to the same AI you're using*, and you add little or no improvement over what the AI produces, then you are no different from a Python script. Some goals might be well-served by focusing entirely on soft skills and networking and largely giving up on critical or creative thinking (I have seen some people do this). But I suspect that is not why many of you are at Oxford doing a research-focused graduate degree in a research-focused department.
