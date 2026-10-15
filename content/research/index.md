@@ -41,6 +41,11 @@ research_interests: >
   are many questions raised by this new paradigm: how agents will influence one
   another; how systems relying on accountability or reputation apply to agents;
   and how such agents and humans might work together.
+
+
+  However, my research interests are not set in stone. I'm also interested in
+  monitorability, the exhaustiveness & implications of the persona selection
+  model
 publications:
   - title: The Missing Metrics in DSA Content Moderation Transparency
     date: 2026-01
