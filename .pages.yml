@@ -23,7 +23,7 @@ content:
   - name: msc-advice
     label: MSc advice
     type: file
-    path: content/msc-advice/index.md
+    path: content/tips/msc-advice/index.md
     format: yaml-frontmatter
     fields:
       - { name: title, type: string }

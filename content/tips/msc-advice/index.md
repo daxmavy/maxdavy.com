@@ -2,6 +2,8 @@
 title: A random list of advice for OII MSc students
 description: Opinionated advice from Max and Alyona on supervision, learning,
   AI, writing and PhD applications
+date: 2026-10-15
+aliases: ["/msc-advice/"]
 ---
 *From Max and Alyona.*
 
