@@ -75,7 +75,7 @@ aliases:
 - Use AI to find articles, but read everything before you cite it. Be aware that AI isn't great at literature review; it frequently puts the emphasis in the wrong places.
 - Use AI to write code, but make sure you understand the choices it is making.
   - As you will see from my code below, I'm pretty comfortable with letting AI write documentation completely autonomously. There are of course exceptions (e.g. explaining a concept alongside code), but IMO it is no longer super important to document code in a particular careful or hand-crafted way, because everyone has agents who can explain parts of code to them. This is a bit of a controversial take.
-- I have a [Claude Code skill file for using Brains](- [https://github.com/daxmavy/brains-claude](https://github.com/daxmavy/brains-claude)) (the OII GPU server).
+- I have a [Claude Code skill file for using Brains](https://github.com/daxmavy/brains-claude) (the OII GPU server).
 - I cannot overemphasise this: do not produce AI slop or use AI to think on your behalf. People can easily spot it and will judge you for it. They will not judge you for saying something wrong or "silly"; they will judge you for putting out slop. It is even fairly easy to spot when someone is speaking aloud but reciting points an AI came up with for them.
 - Read good writing (articles, blogs, books) regularly, so that you are often exposed to writing other than AI-generated output.
 
