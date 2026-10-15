@@ -23,10 +23,10 @@ description: "Opinionated advice from Max and Alyona on supervision, learning, A
 
 - You can just ask to join courses across Oxford. One interesting option is the CDTs (Centres for Doctoral Training), which run focused training in different topics, e.g. health data science, StatML, AIMS, and many others. If you send a polite email to the relevant administrator expressing interest and asking to join, this is often possible.
 - It's much harder to join or audit official courses, which is why I recommend the CDTs.
-- Check out talks (I think the listings are called OxEvents). There are so many cool people giving talks here all the time.
+- Check out talks on [Oxford Events](https://events.ox.ac.uk). There are so many cool people giving talks here all the time.
 - Lower your expectations of teaching quality at the OII. Lecturers typically put in effort, but the curriculum design is all over the place. Learning happens around the classroom rather than in it: talking about interesting papers, figuring out what to do for your summatives, reading up on different areas to come up with thesis ideas. These are all ways to learn a lot.
 - Some courses can be boring, but because almost all final assignments are some form of research project that you choose, you can have a lot of fun with them.
-- You can get a lot out of a course even if you think you already know the content. For example, in stats, many people said "I know what a linear regression is", but didn't know more deeply why it works, when it might fail, or how to apply it in practice. I was a data scientist for five years before the MSc and still got a lot out of the stats class, just from the chance to read and think deeply about stats.
+- You can get a lot out of a course even if you think you already know the content. For example, in stats, many people said "I know what a linear regression is", but didn't know more deeply why it works, when it might fail, or how to apply it in practice. I studied maths and stats in my undergrad, and then worked as a data scientist for quite a while before coming to the OII. Despite all this, I still got a lot out of the stats class, just from the chance to read and think deeply about stats.
 - Chat to PhD students, and feel free to reach out to different people in the department.
 
 ## For people with English as a second language
@@ -110,6 +110,7 @@ So: back up (all code to GitHub, all experimental data to external databases plu
 - The SDS scholarship deadline is in January, but Engineering and many other relevant deadlines are in November or December. Check their deadlines.
 - There are a million different ways to get a PhD at Oxford, and to get funding. Many of them are not obvious or easily Googleable (or Claudeable). Please reach out if you want to know more.
 - Being here for the MSc makes you a much more attractive option for RA positions (surprisingly, this is often easier outside the OII).
+- Lecturers and professors earlier in their careers can have more time than more famous professors, who typically have millions of people clamouring for their attention (and to RA with them).
 - Feel free to message me. The OII runs one info session about applying straight away, but if I remember correctly it happens quite late in term. Professors are typically helpful, but in general the OII doesn't make it easy to apply immediately. I wish I'd had someone to talk to who had applied during the MSc when I was considering it, so I'm happy to be that person now!
 - If there is enough interest, I can give tactical advice on how to position a PhD application for the OII. I don't know how the sausage gets made, but a number of people gave me tips that should probably be more widely available.
 
