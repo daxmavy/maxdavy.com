@@ -1,7 +1,7 @@
 {{ define "main" }}
 <header>
   <h1>{{ .Title }}</h1>
-  {{ if .Description }}
+  {{ if and .Description (ne .Section "tips") }}
   <p class="description">{{ .Description }}</p>
   {{ end }}
 </header>
