@@ -13,7 +13,8 @@
     <div class="meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
     </div>
-    {{ if .Description }}
+    {{ if eq .Section "tips" }}
+    {{ else if .Description }}
     <p class="summary">{{ .Description }}</p>
     {{ else if .Summary }}
     <p class="summary">{{ .Summary }}</p>

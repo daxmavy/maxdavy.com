@@ -3,8 +3,6 @@ title: Why you shouldn't use AI to write
 description: Five reasons to write your own prose, from Max
 date: 2026-10-31
 ---
-*[from Max]*
-
 AI is improving massively across a wide range of what we would historically call cognitive abilities. This includes the ability to write fluently and well. For example, in [a recent experiment](https://arxiv.org/html/2601.18353v1), MFA literature students at a prestigious university preferred AI-generated writing. AI can no doubt be used to improve writing, for example by critiquing it. However, if you use AI to write, there are several important downsides to be aware of.
 
 **First, writing is about communication.** Every sentence you write should serve a purpose. When people write with AI, they typically underspecify their prompt. This leaves a large number of decisions about the communicative intent of the writing up to the AI. The AI will go with its highest-likelihood judgement of the appropriate information to communicate, which is extremely unlikely to match what you intend to communicate, or what is most effective to communicate. In some circumstances this isn't an issue. For example, I use AI extensively (with human editing) to write appendices. They are often quite procedural, so the AI's guess about what to include is pretty accurate, and I can guide it very easily. However, I never use AI to write figure captions. Although they might seem as procedural as appendices, there is a careful art to deciding what information the caption should convey to the reader. The AI typically has nowhere near enough context (most of which is sitting in your head, and isn't digitised anywhere) to make the right decisions about what to communicate. I have tried to automate this sort of writing before, and found that writing the prompt took more effort than writing the text I wanted directly.
@@ -21,5 +19,5 @@ One rational reason to judge people who produce AI-generated writing / presentat
 
 ## Further reading
 
-- [Chasing the Karpathy Peak](https://thomasjiralerspong.substack.com/p/chasing-the-karpathy-peak)
-- [If you let AI do your writing, I will](https://samkriss.substack.com/p/if-you-let-ai-do-your-writing-i-will)
+- [Chasing the Karpathy Peak (and Falling Off Slop Cliff): Confessions from Slopaholics Anonymous](https://thomasjiralerspong.substack.com/p/chasing-the-karpathy-peak)
+- [If you let AI do your writing, I will come to your house and kill you](https://samkriss.substack.com/p/if-you-let-ai-do-your-writing-i-will)
