@@ -3,7 +3,8 @@ title: A random list of advice for OII MSc students
 description: Opinionated advice from Max and Alyona on supervision, learning,
   AI, writing and PhD applications
 date: 2026-10-15
-aliases: ["/msc-advice/"]
+aliases:
+  - /msc-advice/
 ---
 *From Max and Alyona.*
 
@@ -69,12 +70,12 @@ aliases: ["/msc-advice/"]
 
 ## AI
 
-- Don't use AI to write at all, at any point. Writing arguments down in full clarifies what you mean, and often forces you to notice mistakes or weak points. (See [the longer rant](/tips/ai-writing/).)
+- Don't use AI to write at all, at any point. [For a longer argument on this point, see here.](/tips/ai-writing/)
 - Please, please, please, please try not to use AI to answer "dumb questions" or to tutor yourself. You came to Oxford for a community of interesting and engaged classmates: ask them instead! Chatting through these questions with other students has so many side benefits. You signal that you're interested in an area or method, it starts conversations, explaining things to each other is a great way to consolidate knowledge, and it's just fun to learn with and from one another. And by role-modelling that you don't know everything, you make everyone more willing to open up and learn from one another.
 - Use AI to find articles, but read everything before you cite it. Be aware that AI isn't great at literature review; it frequently puts the emphasis in the wrong places.
 - Use AI to write code, but make sure you understand the choices it is making.
   - As you will see from my code below, I'm pretty comfortable with letting AI write documentation completely autonomously. There are of course exceptions (e.g. explaining a concept alongside code), but IMO it is no longer super important to document code in a particular careful or hand-crafted way, because everyone has agents who can explain parts of code to them. This is a bit of a controversial take.
-- I have a [Claude Code skill file for using Brains](- [https://github.com/daxmavy/brains-claude](https://github.com/daxmavy/brains-claude)) (the OII GPU server).
+- I have a [Claude Code skill file for using Brains](https://github.com/daxmavy/brains-claude) (the OII GPU server).
 - I cannot overemphasise this: do not produce AI slop or use AI to think on your behalf. People can easily spot it and will judge you for it. They will not judge you for saying something wrong or "silly"; they will judge you for putting out slop. It is even fairly easy to spot when someone is speaking aloud but reciting points an AI came up with for them.
 - Read good writing (articles, blogs, books) regularly, so that you are often exposed to writing other than AI-generated output.
 
