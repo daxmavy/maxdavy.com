@@ -83,6 +83,10 @@ ul, ol {
   margin-left: 2rem;
 }
 
+ol ol {
+  list-style-type: lower-alpha;
+}
+
 /* Links */
 a {
   color: var(--color-secondary);

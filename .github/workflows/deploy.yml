@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '17 5 * * *'
   workflow_dispatch:
 
 permissions:
@@ -27,6 +29,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Refresh pages written in Google Docs
+        run: |
+          python3 scripts/sync_gdoc.py content || echo "::warning::A Google Doc could not be fetched; the committed copy is published instead."
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
